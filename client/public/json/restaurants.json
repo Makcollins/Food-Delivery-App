@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Domino's",
+        "city": "Delhi",
+        "location_id": 1,
+        "city_id": 1,
+        "locality": "ShalimarBagh",
+        "thumb": [
+            "assets/images/tea.png",
+            "assets/images/turkey_food.png",
+            "Assets/images/juice.png",
+            "Assets/images/potato_chips.png"
+        ],
+        "aggregate_rating": 4.2,
+        "rating_text": "VeryGood",
+        "min_price": 666,
+        "contact_number": 919453524651,
+        "cuisine": [
+            {
+                "id": 1,
+                "name": "North Indian"
+            },
+            {
+                "id": 4,
+                "name": "Fast Food"
+            }
+        ],
+        "image": "assets/images/tea.png",
+        "mealtype_id": 1
+    },
+    {
+        "name": "KFC",
+        "city": "Delhi",
+        "location_id": 1,
+        "city_id": 1,
+        "locality": "ShalimarBagh",
+        "thumb": [
+            "assets/images/tea.png",
+            "assets/images/turkey_food.png",
+            "Assets/images/juice.png",
+            "Assets/images/potato_chips.png"
+        ],
+        "aggregate_rating": 4.5,
+        "rating_text": "Excellent",
+        "min_price": 333,
+        "contact_number": 919453524651,
+        "cuisine": [
+            {
+                "id": 2,
+                "name": "South Indian"
+            },
+            {
+                "id": 4,
+                "name": "Fast Food"
+            }
+        ],
+        "image": "assets/images/tea.png",
+        "mealtype_id": 1
+    },
+    {
+        "name": "BurgerKing",
+        "city": "Delhi",
+        "location_id": 1,
+        "city_id": 1,
+        "locality": "ShalimarBagh",
+        "thumb": [
+            "assets/images/tea.png",
+            "assets/images/turkey_food.png",
+            "Assets/images/juice.png",
+            "Assets/images/potato_chips.png"
+        ],
+        "aggregate_rating": 4.5,
+        "rating_text": "Excellent",
+        "min_price": 999,
+        "contact_number": 919453524651,
+        "cuisine": [
+            {
+                "id": 2,
+                "name": "South Indian"
+            },
+            {
+                "id": 4,
+                "name": "Fast Food"
+            }
+        ],
+        "image": "assets/images/tea.png",
+        "mealtype_id": 1
+    },
+    {
+        "name": "Baba KaDhaba",
+        "city": "Delhi",
+        "location_id": 5,
+        "city_id": 1,
+        "locality": "AnandVihar",
+        "thumb": [
+            "assets/images/tea.png",
+            "assets/images/turkey_food.png",
+            "Assets/images/juice.png",
+            "Assets/images/potato_chips.png"
+        ],
+        "aggregate_rating": 3.5,
+        "rating_text": "Excellent",
+        "min_price": 599,
+        "contact_number": 919453524651,
+        "cuisine": [
+            {
+                "id": 2,
+                "name": "South Indian"
+            },
+            {
+                "id": 4,
+                "name": "Fast Food"
+            }
+        ],
+        "image": "assets/images/tea.png",
+        "mealtype_id": 2
+    }
+]

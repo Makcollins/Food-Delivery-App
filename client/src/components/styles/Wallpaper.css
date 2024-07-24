@@ -1,0 +1,13 @@
+.header{
+    height: 34vw;
+    margin:0 auto 30px;
+    background: url('wall4.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 0;
+}

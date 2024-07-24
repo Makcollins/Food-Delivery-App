@@ -1,0 +1,19 @@
+.food-item{
+    background-color: white;
+    max-height: 300px;
+    min-width: 300px;
+}
+.food-item:hover{
+    background-color: white;
+    height: 101%;
+    width: 101%;
+    border: 1px solid rgb(202, 202, 202);
+}
+.food-item-img-container{
+    max-height: 150px;
+    min-width: 280px;
+}
+.food-item-img {
+    max-height: 150px;
+    max-width: 280px;
+}
