@@ -35,6 +35,7 @@ export const food_list =[
     {
         _id: "1",
         name: "Avocado",
+        "aggregate_rating": 4.2,
         image: avocado,
         price:100,
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
@@ -43,6 +44,7 @@ export const food_list =[
     {
         _id: "2",
         name: "Broccoli",
+        "aggregate_rating": 4.5,
         image: broccoli,
         price:100,
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
@@ -51,6 +53,7 @@ export const food_list =[
     {
         _id: "3",
         name: "Cake",
+        "aggregate_rating": 4.1,
         image: cake,
         price:100,
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
@@ -59,6 +62,7 @@ export const food_list =[
     {
         _id: "4",
         name: "Toast",
+        "aggregate_rating": 4.0,
         image: toast,
         price:100,
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
@@ -67,6 +71,7 @@ export const food_list =[
     {
         _id: "5",
         name: "Juice",
+        "aggregate_rating": 4.2,
         image: juice,
         price:100,
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
@@ -75,6 +80,7 @@ export const food_list =[
     {
         _id: "3",
         name: "Cake",
+        "aggregate_rating": 4.5,
         image: cake,
         price:100,
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
@@ -83,6 +89,7 @@ export const food_list =[
     {
         _id: "4",
         name: "Toast",
+        "aggregate_rating": 4.2,
         image: toast,
         price:100,
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
@@ -91,6 +98,7 @@ export const food_list =[
     {
         _id: "5",
         name: "Juice",
+        "aggregate_rating": 4.6,
         image: juice,
         price:100,
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",

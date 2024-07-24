@@ -1,13 +1,48 @@
-.header{
-    height: 34vw;
-    margin:0 auto 30px;
-    background: url('wall4.jpg') no-repeat;
-    background-size: cover;
-    position: relative;
+
+
+@media only screen and (max-width: 600px) {
+    .header{
+        height: 80vh;
+        margin:0 auto 30px;
+        background: url('wall4.jpg') no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    input {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 0;
+    }
 }
-input {
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 0;
+@media only screen and (min-width: 600px) {
+    .header{
+        height: 60vw;
+        margin:0 auto 30px;
+        background: url('wall4.jpg') no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    input {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header{
+        height: 34vw;
+        margin:0 auto 30px;
+        background: url('wall4.jpg') no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    input {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 0;
+    }
 }

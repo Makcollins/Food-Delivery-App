@@ -17,3 +17,6 @@
     max-height: 150px;
     max-width: 280px;
 }
+food-item-counter{
+    position: absolute;
+}
