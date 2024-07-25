@@ -1,3 +1,6 @@
+.food-display{
+    min-width: 320px;
+}
 .food-item:hover{
     box-shadow: 5px 10px 18px red
 }

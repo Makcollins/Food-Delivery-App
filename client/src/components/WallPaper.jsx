@@ -4,7 +4,7 @@ import './styles/Wallpaper.css'
 
 const WallPaper = () => {
   return (
-    <div className='header'>
+    <div className='container-fluid header'>
         <div className='header-content d-flex align-items-center align-self-center justify-content-center flex-column h-100'>
           <h1 className='text-dark text-center'>Discover the best restaurants and meals</h1>
           <form>

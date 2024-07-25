@@ -1,5 +1,6 @@
 .explore-menu {
     display: flex;
+    min-width: 320px;
     flex-direction: column;
     gap: 20px;
 }
