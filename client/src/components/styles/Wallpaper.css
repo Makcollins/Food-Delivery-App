@@ -1,48 +1,38 @@
+.header {
+    height: 34vw;
+    margin: 0 auto 30px;
+    min-width: 320px;
+    background: url('wall4.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
 
 @media only screen and (max-width: 600px) {
-    .header{
+    .header {
         height: 80vh;
-        min-width: 320px;
-        background: url('wall4.jpg') no-repeat;
-        background-size: cover;
-        position: relative;
+
     }
-    input {
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: 0;
-    }
+
 }
+
 @media only screen and (min-width: 600px) {
-    .header{
+    .header {
         height: 60vw;
-        margin:0 auto 30px;
-        background: url('wall4.jpg') no-repeat;
-        background-size: cover;
-        position: relative;
     }
-    input {
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: 0;
-    }
+
 }
 
 @media only screen and (min-width: 768px) {
-    .header{
+    .header {
         height: 34vw;
-        margin:0 auto 30px;
-        background: url('wall4.jpg') no-repeat;
-        background-size: cover;
-        position: relative;
     }
-    input {
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border: 0;
-    }
+
 }

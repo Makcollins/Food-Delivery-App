@@ -1,23 +1,24 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './styles/FoodItem.css'
 import { FaStar } from "react-icons/fa";
 import { IoMdAddCircleOutline, IoMdRemoveCircleOutline } from "react-icons/io";
+import { StoreContext } from '../context/StoreContext';
 
 const FoodItem = ({ id, name, image,aggregate_rating, price, description }) => {
 
-    const [itemCount, setItemCount] = useState(0)
+    const {cartItems,addToCart,removeFromCart} = useContext(StoreContext);
     return (
         <div className='food-item shadow p-3 mb-5 bg-body rounded'>
             <div className="food-item-img-container p-3 h-60 rounded">
                 <img className='food-item-img h-60 d-block' src={image} alt="" />
             </div>
             {
-                    !itemCount
-                        ? <IoMdAddCircleOutline onClick={() => setItemCount(prev => prev + 1)} /> :
+                    !cartItems[id]
+                        ? <IoMdAddCircleOutline onClick={() =>addToCart(id)} /> :
                         <div className='food-item-counter d-flex align-items-center'>
-                            <IoMdRemoveCircleOutline onClick={() => setItemCount(prev => prev - 1)} />
-                            <p>{itemCount}</p>
-                            <IoMdAddCircleOutline onClick={() => setItemCount(prev => prev + 1)} />
+                            <IoMdRemoveCircleOutline onClick={() => removeFromCart(id)} />
+                            <p>{cartItems[id]}</p>
+                            <IoMdAddCircleOutline onClick={() =>addToCart(id)} />
                         </div>
                 }
             <div className="food-item-text">

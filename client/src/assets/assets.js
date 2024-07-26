@@ -78,7 +78,7 @@ export const food_list =[
         category: "drinks"
     },
     {
-        _id: "3",
+        _id: "6",
         name: "Cake",
         "aggregate_rating": 4.5,
         image: cake,
@@ -87,7 +87,7 @@ export const food_list =[
         category: "Cakes"
     },
     {
-        _id: "4",
+        _id: "7",
         name: "Toast",
         "aggregate_rating": 4.2,
         image: toast,
@@ -96,7 +96,7 @@ export const food_list =[
         category: "Breakfast"
     },
     {
-        _id: "5",
+        _id: "8",
         name: "Juice",
         "aggregate_rating": 4.6,
         image: juice,
