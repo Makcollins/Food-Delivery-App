@@ -36,15 +36,15 @@ const PlaceOrder = () => {
                         <hr />
                         <div className="cart-total-details d-flex justify-content-between">
                             <p>Delivery Fee</p>
-                            <p>${2}</p>
+                            <p>${getTotalAmount() === 0 ? 0 : 2}</p>
                         </div>
                         <hr />
                         <div className="cart-total-details d-flex justify-content-between">
                             <b>Total</b>
-                            <b>${getTotalAmount() + 2}</b>
+                            <b>${getTotalAmount() === 0 ? 0 : getTotalAmount() + 2}</b>
                         </div>
                     </div>
-                    <button className='btn btn-danger'>PROCEED TO PAYMENT</button>
+                    <button className='btn btn-danger mt-3'>PROCEED TO PAYMENT</button>
                 </div>
 
             </div>

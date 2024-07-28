@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
 
-  const { cartItems, food_list, removeFromCart,getTotalAmount } = useContext(StoreContext);
+  const { cartItems, food_list, removeFromCart, getTotalAmount } = useContext(StoreContext);
 
   const navigate = useNavigate()
 
@@ -32,7 +32,7 @@ const Cart = () => {
                   <p>${item.price}</p>
                   <p>{cartItems[item._id]}</p>
                   <p>${item.price * cartItems[item._id]}</p>
-                  <p onClick={()=>removeFromCart(item._id)} className='cross'><VscChromeClose /></p>
+                  <p onClick={() => removeFromCart(item._id)} className='cross'><VscChromeClose /></p>
                 </div>
                 <hr />
               </div>
@@ -49,18 +49,18 @@ const Cart = () => {
               <p>Subtotal</p>
               <p>${getTotalAmount()}</p>
             </div>
-            <hr/>
+            <hr />
             <div className="cart-total-details d-flex justify-content-between">
               <p>Delivery Fee</p>
-              <p>${2}</p>
+              <p>${getTotalAmount() === 0 ? 0 : 2}</p>
             </div>
             <hr />
             <div className="cart-total-details d-flex justify-content-between">
               <b>Total</b>
-              <b>${getTotalAmount()+2}</b>
+              <b>${getTotalAmount() === 0 ? 0 : getTotalAmount() + 2}</b>
             </div>
           </div>
-          <button className='btn btn-danger' onClick={()=>navigate('/order')}>CHECKOUT</button>
+          <button className='btn btn-danger' onClick={() => navigate('/order')}>CHECKOUT</button>
         </div>
 
         {/* PROMO CODE */}

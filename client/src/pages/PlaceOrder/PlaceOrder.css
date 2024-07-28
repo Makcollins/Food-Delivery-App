@@ -1,9 +1,19 @@
-.order  {
+.order {
     position: relative;
     top: 100px;
-    gap: 50px;
+    gap: 100px;
 }
-.order-left{
-    max-width: max(30%,500px);
 
+.order-left {
+    max-width: max(30%, 500px);
+
+}
+
+.multi-fields {
+    gap: 10px;
+}
+
+.order-right{
+    width: 100%;
+    max-width: max(40%,500px);
 }
