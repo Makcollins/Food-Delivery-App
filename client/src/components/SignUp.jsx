@@ -4,11 +4,11 @@ import { VscChromeClose, VscPass } from "react-icons/vsc";
 import { StoreContext } from '../context/StoreContext';
 import axios from 'axios';
 
-const LoginPopup = ({ setShowLogin }) => {
+const SignUp = ({ setShowSignUp }) => {
 
   const { url,setToken } = useContext(StoreContext);
 
-  const [currentState, setCurrentState] = useState("Login")
+  const [currentState, setCurrentState] = useState("Sign Up")
 
   const [data, setData] = useState({
     name: "",
@@ -36,7 +36,7 @@ const LoginPopup = ({ setShowLogin }) => {
     if (response.data.success) {
       setToken(response.data.token);
       localStorage.setItem("token",response.data.token)
-      setShowLogin(false)
+      setShowSignUp(false)
     }
     else {
       alert(response.data.message)
@@ -48,7 +48,7 @@ const LoginPopup = ({ setShowLogin }) => {
       <form onSubmit={onLogin} className='login-popup-container'>
         <div className="d-flex justify-content-between .align-items-center text-dark mb-3">
           <h3>{currentState}</h3>
-          <VscChromeClose className='x' onClick={() => setShowLogin(false)} />
+          <VscChromeClose className='x' onClick={() => setShowSignUp(false)} />
         </div>
 
         {currentState === "Login" ? <></> :
@@ -85,4 +85,4 @@ const LoginPopup = ({ setShowLogin }) => {
   )
 }
 
-export default LoginPopup
+export default SignUp

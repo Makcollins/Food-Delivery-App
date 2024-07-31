@@ -4,7 +4,7 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext'
 
-const Header = ({ setShowLogin }) => {
+const Header = ({ setShowLogin,setShowSignUp }) => {
 
   const { getTotalAmount } = useContext(StoreContext)
   
@@ -16,8 +16,8 @@ const Header = ({ setShowLogin }) => {
             <Link to='/'>Home</Link>
             <div className='d-flex justify-content-end'>
               <Link className='d-flex' to='/cart'>Cart <span className={getTotalAmount() === 0 ? "" : "dot"}></span></Link>
-              <a href="#" className='mx-4' onClick={() => setShowLogin(true)}>Login</a>
-              <Button variant="outline-secondary">Create Account</Button>
+              <Button className='mx-4' onClick={() => setShowLogin(true)}>Login</Button>
+              <Button variant="outline-secondary" onClick={() => setShowSignUp(true)}>Create Account</Button>
             </div>
           </Container>
         </Navbar>
