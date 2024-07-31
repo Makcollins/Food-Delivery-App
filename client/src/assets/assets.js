@@ -7,9 +7,10 @@ import noodle from './images/noodle.png'
 import red_cup from './images/red_cup.png'
 import potato_chips from './images/potato_chips.png'
 import toast from './images/toast.png'
+import man_user from './images/man_user.png'
 
 export const assets = {
-    avocado,broccoli, cake, corn, juice, noodle,red_cup, potato_chips, toast
+    avocado,broccoli, cake, corn, juice, noodle,red_cup, potato_chips, toast, man_user
 }
 
 export const menu_list = [
