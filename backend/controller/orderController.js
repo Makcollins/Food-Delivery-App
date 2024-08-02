@@ -5,7 +5,7 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 //placing order from front-end
-const placeorder = async (req,res) => {
+const placeOrder = async (req,res) => {
 
     const frontend_url = "http://localhost:5173"
     try {
@@ -20,27 +20,27 @@ const placeorder = async (req,res) => {
 
         const line_items = req.body.items.map((item)=>({
             price_data:{
-                currency:"ksh",
+                currency:"kes",
                 product_data:{
                     name:item.name
                 },
-                unit_amount:item.price*100
+                unit_amount:item.price*100*150
             },
             quantity:item.quantity
         }))
 
         line_items.push({
             price_data:{
-                currency:"ksh",
+                currency:"kes",
                 product_data:{
                     name:"Delivery Charges"
                 },
-                unit_amount:2*100
+                unit_amount:2*100*150
             },
             quantity:1
         })
 
-        const session = await stripe.checkout.session.create({
+        const session = await stripe.checkout.sessions.create({
             line_items:line_items,
             mode:'payment',
             success_url:`${frontend_url}/verify?success=true&orderId=${newOrder._id}`,
@@ -54,4 +54,32 @@ const placeorder = async (req,res) => {
     }
 }
 
-export {placeorder}
+const verifyOrder = async (req,res) => {
+    const {orderId,success} = req.body;
+    try {
+        if (success=="true") {
+            await orderModel.findByIdAndUpdate(orderId,{payment:true});
+            res.json({success:true,message:"paid"});
+        }
+        else {
+            await orderModel.findByIdAndDelete(orderId);
+            res.json({success:false, message:"Not Paid"})
+        }
+    } catch (error) {
+        console.log(error);
+        res.json({success:false, message:"Error"})
+    }
+}
+
+//user orders for frontend
+const userOrders = async (req,res) => {
+    try {
+        const orders = await orderModel.find({userId:req.body.userid});
+        res.json({success:true,data:orders})
+    } catch (error) {
+        console.log(error);
+        res.json({success:false, message:"Error"})
+    }
+}
+
+export {placeOrder,verifyOrder,userOrders}

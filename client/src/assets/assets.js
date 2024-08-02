@@ -8,9 +8,10 @@ import red_cup from './images/red_cup.png'
 import potato_chips from './images/potato_chips.png'
 import toast from './images/toast.png'
 import man_user from './images/man_user.png'
+import parcel from './images/parcel.png'
 
 export const assets = {
-    avocado,broccoli, cake, corn, juice, noodle,red_cup, potato_chips, toast, man_user
+    man_user,parcel
 }
 
 export const menu_list = [
@@ -32,77 +33,77 @@ export const menu_list = [
     },
 ]
 
-export const food_list =[
-    {
-        _id: "1",
-        name: "Avocado",
-        "aggregate_rating": 4.2,
-        image: avocado,
-        price:100,
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        category: "Dinner/Lunch"
-    },
-    {
-        _id: "2",
-        name: "Broccoli",
-        "aggregate_rating": 4.5,
-        image: broccoli,
-        price:100,
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        category: "Dinner/Lunch"
-    },
-    {
-        _id: "3",
-        name: "Cake",
-        "aggregate_rating": 4.1,
-        image: cake,
-        price:100,
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        category: "Cakes"
-    },
-    {
-        _id: "4",
-        name: "Toast",
-        "aggregate_rating": 4.0,
-        image: toast,
-        price:100,
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        category: "Breakfast"
-    },
-    {
-        _id: "5",
-        name: "Juice",
-        "aggregate_rating": 4.2,
-        image: juice,
-        price:100,
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        category: "drinks"
-    },
-    {
-        _id: "6",
-        name: "Cake",
-        "aggregate_rating": 4.5,
-        image: cake,
-        price:100,
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        category: "Cakes"
-    },
-    {
-        _id: "7",
-        name: "Toast",
-        "aggregate_rating": 4.2,
-        image: toast,
-        price:100,
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        category: "Breakfast"
-    },
-    {
-        _id: "8",
-        name: "Juice",
-        "aggregate_rating": 4.6,
-        image: juice,
-        price:100,
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-        category: "drinks"
-    }
-]
+// export const food_list =[
+//     {
+//         _id: "1",
+//         name: "Avocado",
+//         "aggregate_rating": 4.2,
+//         image: avocado,
+//         price:100,
+//         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+//         category: "Dinner/Lunch"
+//     },
+//     {
+//         _id: "2",
+//         name: "Broccoli",
+//         "aggregate_rating": 4.5,
+//         image: broccoli,
+//         price:100,
+//         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+//         category: "Dinner/Lunch"
+//     },
+//     {
+//         _id: "3",
+//         name: "Cake",
+//         "aggregate_rating": 4.1,
+//         image: cake,
+//         price:100,
+//         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+//         category: "Cakes"
+//     },
+//     {
+//         _id: "4",
+//         name: "Toast",
+//         "aggregate_rating": 4.0,
+//         image: toast,
+//         price:100,
+//         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+//         category: "Breakfast"
+//     },
+//     {
+//         _id: "5",
+//         name: "Juice",
+//         "aggregate_rating": 4.2,
+//         image: juice,
+//         price:100,
+//         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+//         category: "drinks"
+//     },
+//     {
+//         _id: "6",
+//         name: "Cake",
+//         "aggregate_rating": 4.5,
+//         image: cake,
+//         price:100,
+//         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+//         category: "Cakes"
+//     },
+//     {
+//         _id: "7",
+//         name: "Toast",
+//         "aggregate_rating": 4.2,
+//         image: toast,
+//         price:100,
+//         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+//         category: "Breakfast"
+//     },
+//     {
+//         _id: "8",
+//         name: "Juice",
+//         "aggregate_rating": 4.6,
+//         image: juice,
+//         price:100,
+//         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+//         category: "drinks"
+//     }
+// ]
