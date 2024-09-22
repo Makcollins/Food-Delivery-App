@@ -6,7 +6,7 @@ const WallPaper = () => {
   return (
     <div className='container-fluid header'>
         <div className='header-content d-flex align-items-center align-self-center justify-content-center flex-column h-100'>
-          <h1 className='text-light text-center'>Discover the best restaurants and meals</h1>
+          <h1 className='text-dark text-center'>Discover the best restaurants and meals</h1>
           <form>
             <div className='d-flex justify-content-center flex-wrap mb-3'>
               <div className='d-flex'>
