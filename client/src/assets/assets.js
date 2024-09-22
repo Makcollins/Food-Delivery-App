@@ -9,9 +9,10 @@ import potato_chips from './images/potato_chips.png'
 import toast from './images/toast.png'
 import man_user from './images/man_user.png'
 import parcel from './images/parcel.png'
+import wall4 from './images/wall4.jpg'
 
 export const assets = {
-    man_user,parcel
+    man_user,parcel,wall4
 }
 
 export const menu_list = [
