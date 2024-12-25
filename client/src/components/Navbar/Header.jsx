@@ -25,11 +25,11 @@ const Header = ({ setShowLogin, setShowSignUp }) => {
       <Container className='nav-bar'>
         <Navbar expand="lg" className="bg-body-transparent">
           <Container className="d-flex justify-content-between">
-            <Link to='/' className='btn btn-outline-secondary px-3'>Home</Link>
-            <div className='d-flex justify-content-end right'>
+            <Link to='/' className='btn btn-outline-dark px-3'>Home</Link>
+            <div className='d-flex justify-content-end'>
               {!token ? <>
-                <Button className='me-3'variant='outline-primary' onClick={() => setShowLogin(true)}><FaUser className='fs-6'/>Login</Button>
-                <button className='btn btn-outline-secondary sign-up' onClick={() => setShowSignUp(true)}>SignUp</button>
+                <Button className='me-3'variant='outline-dark' onClick={() => setShowLogin(true)}><FaUser className='fs-6'/>Login</Button>
+                <button className='btn btn-outline-dark sign-up' onClick={() => setShowSignUp(true)}>SignUp</button>
                 </>
                 : <><Link className='me-3 cart-icon' to='/cart'><FaCartArrowDown className='fs-4 me-1'/>Cart<span className={getTotalAmount() === 0 ? "" : "dot"}></span></Link>
                 <div className='nav-profile'>
