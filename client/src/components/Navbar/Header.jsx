@@ -25,7 +25,7 @@ const Header = ({ setShowLogin, setShowSignUp }) => {
       <Container className='nav-bar'>
         <Navbar expand="lg" className="bg-body-transparent">
           <Container className="d-flex justify-content-between">
-            <Link to='/' className='btn btn-outline-dark px-3'>Home</Link>
+            <Link to='/' className='px-3'>Mameals</Link>
             <div className='d-flex justify-content-end'>
               {!token ? <>
                 <Button className='me-3'variant='outline-dark' onClick={() => setShowLogin(true)}><FaUser className='fs-6'/>Login</Button>
