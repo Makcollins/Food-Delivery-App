@@ -5,9 +5,6 @@
   box-sizing: border-box;
   font-family: OutFit;
 }
-html {
-  overflow: hidden;
-}
 body{
   min-height: 100vh;
 }
